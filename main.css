@@ -1,0 +1,119 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+/* Bloco de estilização do cabeçalho */
+header{
+    background-color: #99402e;
+    color: #000000;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.banner.content{
+    width: 100%;
+}
+
+.banner h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.banner p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilização do menu de navegação*/
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffca28;
+    border-radius: 30px;
+
+}
+
+nav a:hover{
+    background-color: #969824;
+}
+
+main{
+    width: 80%;
+    margin: 2rem;
+
+}
+
+/* Estilização das seções da página compostas por Produtos, bebidas, pedidos e contato*/
+
+.categoria{
+    margin-bottom: 2rem;
+}
+
+.produto{
+    background-color: #9e8fa2;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+div button:hover{
+    background-color: #969824;
+}
+
+.produto img{
+    max-width: 100%;
+    height: 10rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.preco{
+    font-weight: bold;
+    color: #ff98;
+    margin-bottom: 1rem;
+
+}
+
+.adicionar{
+    background-color: #ffca28;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    bottom: 15svb;
+    
+}
+
+footer{
+    text-align: center;
+    padding: 0.7rem;
+    background-color: #d31717;
+    color: #fff;
+    font-weight: bold;
+    font-size:larger;
+    
+}
+
+/* Estilo de responsividade*/
+@media(min-width: 768px){
+    main{
+        width: 60%;
+    }
+    .categoria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
